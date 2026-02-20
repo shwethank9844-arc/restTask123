@@ -32,5 +32,8 @@ public class dynamic {
      	System.out.println(value);
      	System.out.println(value);
      	System.out.println(value);
+     	System.out.println(value);
+     	System.out.println(value);
+     	
 	}
 }
