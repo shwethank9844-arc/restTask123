@@ -48,7 +48,11 @@ public class Pagination_Test1 {
     			  driver.findElement(By.xpath("//ul[@class='pagination']/li/a[text()='"+(i+1)+"']")).click();
                      
     	          }
+
     		System.out.println("asdfghjkl,mnbvcxz");
+
+    		System.out.println("value");
+
     	
 	}
 
