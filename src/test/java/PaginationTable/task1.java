@@ -8,5 +8,7 @@ public class task1 {
 	@Test
 	public void task() {
 		System.out.println("hello");
+		System.out.println("hello1");
+		System.out.println("hello1");
 	}
 }

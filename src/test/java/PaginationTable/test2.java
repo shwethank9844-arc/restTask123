@@ -6,5 +6,7 @@ public class test2 {
 	@Test
 	public void task1() {
 		System.out.println("hello1");
+		System.out.println("hello1");
+		System.out.println("hello1");
 	}
 }
