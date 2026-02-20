@@ -33,19 +33,19 @@ public class Pagination_Test1 {
     	
     	
     	
-    	for(; ;) {
-    		 
-    		 
-    		try {
-    			WebElement actual = driver.findElement(By.xpath("//table[@id='productTable']/tbody/tr/td[.='"+Expect+"']"));
-    			if(actual.equals(Expect))
-                     // driver.findElement(By.xpath("//table[@id='productTable']//tbody/tr")).click();
-                    break; 
-    		}
-    		catch(Exception e) {
-    			  driver.findElements(By.xpath("//ul[@class='pagination']/li"));
-    			
+    	for(int i=1;i<=4 ;i++) {
     		
+    			List<WebElement> actual = driver.findElements(By.xpath("//table[@id='productTable']/tbody/tr/td[.='"+Expect+"']"));
+    			for(WebElement name:actual) {
+    				String data = name.getText();
+    				if(data.equals(Expect))
+    					driver.findElement(By.xpath("//table[@id='productTable']//tbody/tr")).click();
+                       break; 
+       		}
+    				
+
+    		if(i<4){
+    			  driver.findElement(By.xpath("//ul[@class='pagination']/li/a[text()='"+(i+1)+"']")).click();
                      
     	          }
     		
