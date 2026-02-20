@@ -28,12 +28,9 @@ public class dynamic {
      	 Thread.sleep(2000);
      	 
      	 
-      String value = driver.findElement(By.xpath("//table[@id='taskTable']//tr//td[.='"+name+"']/following-sibling::td[contains(text(),'%')]")).getText();
-     	System.out.println(value);
-     	System.out.println(value);
-     	System.out.println(value);
-     	System.out.println(value);
-     	System.out.println(value);
+      String data = driver.findElement(By.xpath("//table[@id='taskTable']//tr//td[.='"+name+"']/following-sibling::td[contains(text(),'%')]")).getText();
+     	System.out.println(data);
+     	
      	
 	}
 }

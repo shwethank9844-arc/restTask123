@@ -32,25 +32,5 @@ public class AmazonTask {
     	  }
 	}
 	
-	@Test
-	public void task3() throws InterruptedException {
-		
-		String name="Chrome";
-		 WebDriver driver=new ChromeDriver();
-    	 driver.manage().window().maximize();
-    	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-    	 
-    	 driver.get("https://testautomationpractice.blogspot.com/");
-    	 
-    	 Actions act=new Actions(driver);
-    	    
-     	
-     	 Thread.sleep(3000);
-     	
-     	 act.scrollByAmount(0, 2000).perform();
-     	 
-     	 
-      String value = driver.findElement(By.xpath("//table[@id='taskTable']//tr//td[.='"+name+"']/following-sibling::td[contains(text(),'%')]")).getText();
-     	System.out.println(value);
-	}
+	
 }
